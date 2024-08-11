@@ -1,0 +1,22 @@
+{
+  "name": "large-dependency-project",
+  "version": "1.0.0",
+  "description": "A project with a very large dependency tree",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "react-scripts": "latest",
+    "aws-sdk": "latest",
+    "firebase": "latest",
+    "jest": "latest",
+    "typescript": "latest",
+    "express": "latest",
+    "babel-preset-env": "latest",
+    "webpack": "latest",
+    "eslint": "latest",
+    "redux": "latest",
+    "mongoose": "latest"
+  }
+}

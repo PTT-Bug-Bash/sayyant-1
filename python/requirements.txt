@@ -1,0 +1,10 @@
+Django
+tensorflow
+pandas
+scikit-learn
+dask
+flask
+spacy
+torch
+scrapy
+boto3t
