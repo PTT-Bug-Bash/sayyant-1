@@ -22,6 +22,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      # GHA Runners are subjec to a 14GB disk space limit
+      #
+      # With the use of a docker container, the hosted tool cache is not needed
+      # This step frees up ~10GB of disk space on the GHA runner
+      - name: Remove hosted tool cache
+        run: |
+          rm -rf /opt/hostedtoolcache
+          echo "Hosted tool cache removed"
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
